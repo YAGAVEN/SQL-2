@@ -13,6 +13,7 @@ import Subqueries from './components/pages/Subqueries'
 import WindowFunctions from './components/pages/WindowFunctions'
 import ExecutionOrder from './components/pages/ExecutionOrder'
 import PlacementPractice from './components/pages/PlacementPractice'
+import Triggers from './components/pages/Triggers'
 import About from './components/pages/About'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="window-functions" element={<WindowFunctions />} />
         <Route path="execution-order" element={<ExecutionOrder />} />
         <Route path="placement" element={<PlacementPractice />} />
+        <Route path="triggers" element={<Triggers />} />
         <Route path="about" element={<About />} />
       </Route>
     </Routes>

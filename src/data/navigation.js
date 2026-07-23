@@ -78,6 +78,12 @@ export const navigationItems = [
     icon: 'GraduationCap'
   },
   {
+    id: 'triggers',
+    title: 'Triggers',
+    path: '/triggers',
+    icon: 'Zap'
+  },
+  {
     id: 'about',
     title: 'About',
     path: '/about',
