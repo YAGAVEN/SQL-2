@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChevronDown, ChevronUp, Lightning, Clock, Database, Shield, AlertTriangle } from 'lucide-react'
+import { ChevronDown, ChevronUp, Zap, Clock, Database, Shield, AlertTriangle } from 'lucide-react'
 import CodeBlock from '../animations/CodeBlock'
 import AnimationStage from '../animations/AnimationStage'
 import TableGrid from '../animations/TableGrid'
@@ -38,7 +38,7 @@ END;`,
     },
     after: {
       name: 'AFTER Trigger',
-      icon: <Lightning className="w-5 h-5" />,
+      icon: <Zap className="w-5 h-5" />,
       color: 'green',
       description: 'Executes after the specified operation',
       rules: ['Cannot modify the data that triggered it', 'Can access auto-increment values', 'Ideal for logging and related operations'],
@@ -79,7 +79,7 @@ END;`,
       icon: <Shield className="w-5 h-5" />,
       color: 'red',
       description: 'Executes when data is deleted',
-      rules: ['Can only reference OLD values', 'Perfect for cleanup operations', 'Can prevent deletions',
+      rules: ['Can only reference OLD values', 'Perfect for cleanup operations', 'Can prevent deletions'],
       example: `CREATE TRIGGER before_customer_delete
 BEFORE DELETE ON customers
 FOR EACH ROW
